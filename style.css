@@ -1,0 +1,621 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);    
+    overflow-x: hidden;
+}
+.hire1{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.hire1::before{
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 110;
+}
+.hire1 img{
+
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+h3{
+    color: aliceblue;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.navbar{
+
+    display: flex;
+    width: 100%;
+    height: 82px;
+    position: fixed;
+    z-index: 999;
+    
+}
+.navbar ul{
+
+    display: flex;
+    position: absolute;
+    right: 1px;
+    width: 55%;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: inherit;
+    /* background-color: rgba(250, 235, 215, 0.49); */
+    border-radius: 50px;
+
+}
+.navbar ul li{
+    list-style-type: none;
+
+}
+.navbar ul li a{
+
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 15px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    transition: 0.4s;
+    
+}
+.navbar ul li a:hover{
+   
+    border-radius: 40px;
+    background:#fff;
+    color: #2b1055;
+    z-index: 11;
+} 
+#moon{
+    mix-blend-mode: screen;
+}
+#mountains_front{
+
+    z-index: 10;
+}
+#maintext{
+
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 6vw;
+    z-index: 9;
+    right: -150px;
+    text-transform: uppercase;
+}
+.event-heading{
+    padding-top: 150px;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.event-heading-text{
+    font-size: 1.9rem;
+}
+    
+#mbtn{
+
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 40px;
+    background:#fff;
+    color: #2b1055;
+    z-index: 11;
+    font-size: 1.5rem;
+    transform: translateY(125px);
+    position: relative;
+    right: -17px;
+    
+    }
+
+#mbtn:hover{
+    border: #fff 3px solid;
+    background: transparent;
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/*          <<<<<<<<<    now 2cnd section  >>>>>>>>>>                         */
+.events{
+
+    background-color: #1c0522;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+
+p{
+    line-height: 2;
+    color: white;
+    padding: 100px;
+    background-color: #1c0522;
+    
+}
+.boxcontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    flex-wrap: wrap;
+    font-family: 'Playfair Display', serif;}
+.box{
+
+    position: relative;
+    width: 320px;
+    height: 420px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 50px;
+    transition: 0.5s;
+    flex-direction: column;
+
+}
+/* .box1{
+    left: 87px;
+
+}
+.box2{
+    right: 87px;
+
+} */
+.boxcontainer .box:hover
+{
+transform: scale(1.05);
+}
+.boxcontainer .box::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+
+
+}
+.boxcontainer .box::after{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    /* filter: blur(10px); */
+    
+
+}
+.boxcontainer .box:nth-child(2)::before,
+.boxcontainer .box:nth-child(2)::after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058) ;
+}
+.boxcontainer .box:nth-child(1)::before,
+.boxcontainer .box:nth-child(1)::after
+{
+    background: linear-gradient(315deg,#4dff03, #00d0ff);
+}
+.boxcontainer .box span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background : rgba(0,0,0,0.6);
+    z-index: 2;
+}
+.boxcontainer .box span::before{
+
+content: '';
+position: absolute;
+top: 0; left: 0;
+width: 50%;
+height: 100%;
+background: rgba(255, 255,255, 0.1);
+pointer-events: none;}
+
+
+#chessimg{
+    position: absolute;
+    height: 155px;
+    z-index: 10;
+    width: 260px;
+    border: 5px solid;
+    border-top-color: rgba(195,60,118);
+    border-left-color: rgba(226,52,97);
+    border-right-color: rgba(139,94,161);
+    border-bottom-color: rgba(78,156,228);
+    
+}
+#cryptoimg{
+    position: absolute;
+    height: 155px;
+    z-index: 10;
+    width: 260px;
+    border: 5px solid;
+    border-top-color: #00ffee;
+    border-left-color: #00d0ff;
+    border-right-color: #1fef8e;
+    border-bottom-color: #6fec3a;
+    
+}
+.box-text{
+    position: absolute;
+    text-decoration: none;
+    margin-top: 0px;
+    z-index: 11;
+    color:  #ffffff;
+    display: inline-block;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    width: 260px;
+    text-align: center;
+    border: 4px solid;
+    padding: 7px 0px;
+    border-top-color: #00ffee;
+    border-bottom-color: #6fec3a;
+    border-left-color: #00d0ff;
+    border-right-color: #1fef8e;
+
+    
+}
+.chesstext{
+    border-top-color: rgba(195,60,118);
+    border-left-color: rgba(226,52,97);
+    border-right-color: rgba(139,94,161);
+    border-bottom-color: rgba(78,156,228);
+}
+.bbtn{
+    text-decoration: none;
+    position: absolute;
+    padding: 6px 40px;
+    color: #fff;
+     width: 260px;
+    text-align: center;
+    border: 4px solid;
+    padding: 7px 0px;
+    border-top-color: #00ffee;
+    border-bottom-color: #6fec3a;
+    border-left-color: #00d0ff;
+    border-right-color: #1fef8e;
+    background: transparent;
+    display: inline-block;
+    z-index: 11;
+    font-size: 1.5rem;
+    top: 66px;
+    font-weight: 400;
+    transition: 0.3s;
+    /* transform: translateY(100px); */
+    
+}
+.bbtn2{
+    text-decoration: none;
+    position: absolute;
+    padding: 6px 40px;
+    color: #fff;
+     width: 260px;
+    text-align: center;
+    border: 4px solid;
+    padding: 7px 0px;
+    border-top-color: #00ffee;
+    border-bottom-color: #6fec3a;
+    border-left-color: #00d0ff;
+    border-right-color: #1fef8e;
+    background: transparent;
+    display: inline-block;
+    z-index: 11;
+    font-size: 1.5rem;
+    top: 132px;
+    font-weight: 400;
+    transition: 0.3s;
+    /* transform: translateY(100px); */
+    
+}
+.chessreg {
+    border-top-color: rgba(195,60,118);
+    border-left-color: rgba(226,52,97);
+    border-right-color: rgba(139,94,161);
+    border-bottom-color: rgba(78,156,228);
+}
+
+
+.bbtn:hover{
+
+    background:#fff;
+    color: #2b1055;
+     border: #fff solid;
+
+    
+}
+.bbtn2:hover{
+
+    background:#fff;
+    color: #2b1055;
+     border: #fff solid;
+
+    
+}
+.box-image-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-text-container{
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#knowmore{
+    
+
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 40px;
+    background:#fff;
+    color: #2b1055;
+    font-size: 1.5rem;
+    position: relative;
+    top: 290px;
+}
+#knowmore:hover{
+    border: #fff 3px solid;
+    background: transparent;
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+
+
+
+/* .nav-scrolled{
+    background-color: rgba(184, 183, 183, 0.3);
+    height: 50px;
+} */
+
+
+    /* <<<<<<<<<     description       >>>>>>>>> */
+
+
+
+.description{
+
+    line-height: 2;
+    color: white;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url("chess1.png"); */
+}
+
+.crypto-de-heading, .chess-de-heading{
+
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+}
+.section-heading{
+   border-image:  linear-gradient(to left, #48B1CB, #0F5CCC,  #AC48A9) 1;
+   border-bottom: 5px solid;
+   text-align: left;
+}
+.section-description{
+    text-align: left;
+    padding-bottom: 40px;
+}
+.desc-container-chess, .desc-container-crypto{
+   
+    padding: 100px;
+    padding-bottom: 60px;
+    background-color: #1c0522;
+    text-align: center;
+
+}
+.mini-heading{
+    font-size: 1.5rem;
+   position: relative;
+    right: 50px;
+}
+
+   
+
+#regbtn{
+    
+
+    text-decoration: none;
+    padding: 12px 38px;
+    border-radius: 30px;
+    background-color:#1bad4e;
+    color: #f7f3fc;
+    font-size: 1.5rem;
+ 
+   
+}
+#regbtn:hover{
+    border: 3px solid  #fff;
+    color: #fff;
+    transition: 0.3s;
+    background: transparent;
+   
+}
+
+.rounds-ul{
+    margin-left: 40px;
+}
+.steps{
+    font-size: 1.15rem;
+    display: inline-block;
+}
+.steps1{
+    width: 70%;
+}
+
+/* .desc-image-side{
+
+height: 100%;
+width: 100%;
+
+;}
+
+.section-image{
+    width: 40%;
+    position: relative;
+    left: 15px;
+    display: inline-block;
+}
+.image-in-desc{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+
+       /* <<<<<<<<      footer      >>>>>>>>> */
+
+.footer{
+
+    height: 120px;
+    background: #4d3673;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.rights1{
+    position: relative;
+    display: inline-block;
+
+}
+.footer-text{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+       /* <<<<<<<<<<<<      media and responsive          >>>>>>>>> */
+
+
+@media  (max-width: 800px){
+    .navbar{
+
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    
+}
+
+    .navbar ul{
+
+    display: flex;
+    position: absolute;
+    right: 1px;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: inherit;
+    /* background-color: rgba(250, 235, 215, 0.49); */
+    border-radius: 50px;
+
+}
+.navbar ul li a{
+
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 3px 12px;
+    border-radius: 40px;
+    font-size: 1rem;
+    transition: 0.4s;
+    
+}
+.navbar h3{
+    color: aliceblue;
+    margin: 5px;
+    font-size: 1rem;
+    position: relative;
+    top: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    /* padding: auto; */
+}
+    .desc-container-chess, .desc-container-crypto{
+   
+        padding: 60px;
+        padding-bottom: 60px;
+        background-color: #1c0522;
+        text-align: center;
+    
+    }
+    #regbtn{
+    
+
+        text-decoration: none;
+        padding: 10px 31px;
+        border-radius: 30px;
+        background-color:#1bad4e;
+        color: #f7f3fc;
+        font-size: 1.5rem;
+     
+       
+    }
+    .steps{
+    font-size: 1.10rem;
+    display: inline-block;
+
+}
+    .nav-scrolled{
+    visibility: hidden;
+}
+.steps1{
+    width: 100%;
+}
+    
+}
